@@ -36,7 +36,6 @@ func Make(op Opcode, operands ...int) []byte {
 	if !ok {
 		return []byte{}
 	}
-
 	instructionLen := 1
 	for _, w := range def.OperandWidths {
 		instructionLen += w
